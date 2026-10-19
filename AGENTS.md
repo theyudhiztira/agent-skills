@@ -26,7 +26,7 @@ Every skill folder has `agents/openai.yaml` with `interface.display_name`, `inte
 
 ## Manifests and versions
 
-- `.claude-plugin/plugin.json` lists every promoted skill path. `.claude-plugin/marketplace.json` makes the repo a single-plugin marketplace named `pensieve`.
+- `.claude-plugin/plugin.json` lists every promoted skill path. `.claude-plugin/marketplace.json` makes the repo a single-plugin marketplace named `theyudhiztira`.
 - The version lives in `package.json`. After bumping it, run `npm run sync-plugin-version`; `npm run check-plugin-version` fails if they differ.
 - After changing either manifest, run `npm run validate` (`claude plugin validate . --strict`). Keep the repo root free of `CLAUDE.md` so strict validation passes.
 - Record user-visible changes in `CHANGELOG.md`.
@@ -44,4 +44,4 @@ Each promoted skill has `docs/<bucket>/<skill-name>.md` with four sections: What
 
 - No em dashes or en dashes in any repo prose, skill text, token file or example. Rewrite with a comma, colon, period, parentheses or a conjunction.
 - No confidential client material in the repo: no client decks, logos, names of people, or figures from client work. Presets carry colours and fonts only.
-- Plain, specific language. The natural-copy rules in `skills/productivity/pensieve-presentation/references/natural-copy.md` apply to this repo's own docs too.
+- Plain, specific language. The natural-copy rules in `skills/productivity/presentation/references/natural-copy.md` apply to this repo's own docs too.

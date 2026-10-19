@@ -1,9 +1,9 @@
 ---
-name: pensieve-presentation
+name: presentation
 description: Build a presentation-ready slide deck for a specific audience, from a brief or by rebuilding an existing deck, with natural (non-AI-sounding) copy, a deliberate layout per slide, design tokens, and talking points. Use when someone asks for a deck, slides, a briefing, a pitch, a project update presentation, or to simplify or restyle an existing .pptx. Outputs PowerPoint, Google Slides, or a Claude Slides artifact.
 ---
 
-# PENSIEVE presentation
+# Presentation
 
 This skill turns source material into a deck a senior audience can follow from the headlines alone. It was built from a real briefing for a government defence audience and works for any audience: client pitches, project updates, internal reviews.
 

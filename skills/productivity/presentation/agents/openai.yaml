@@ -1,5 +1,5 @@
 interface:
-  display_name: "PENSIEVE Presentation"
+  display_name: "Presentation"
   short_description: "Build a presentation-ready deck for a specific audience"
 policy:
   allow_implicit_invocation: true

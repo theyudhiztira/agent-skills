@@ -1,15 +1,15 @@
 {
-  "name": "pensieve",
+  "name": "theyudhiztira",
   "owner": {
     "name": "theyudhiztira",
     "url": "https://github.com/theyudhiztira"
   },
-  "description": "PENSIEVE team skills for coding agents, as an installable plugin.",
+  "description": "Skills for coding agents, as an installable plugin.",
   "plugins": [
     {
-      "name": "pensieve-skills",
+      "name": "agent-skills",
       "source": "./",
-      "description": "PENSIEVE team skills for coding agents (presentation-ready decks with natural copy, layouts, design tokens and talking points).",
+      "description": "Skills for coding agents (presentation-ready decks with natural copy, layouts, design tokens and talking points).",
       "category": "productivity",
       "keywords": [
         "skills",

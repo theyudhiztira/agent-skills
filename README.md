@@ -1,6 +1,6 @@
-# PENSIEVE agent skills
+# Agent skills
 
-Skills for coding agents, shared with the PENSIEVE team. They work in Claude Code, Codex, GitHub Copilot, Gemini CLI, Cursor, OpenCode, Windsurf and any other agent that reads the Agent Skills format (`SKILL.md`).
+Skills for coding agents. They work in Claude Code, Codex, GitHub Copilot, Gemini CLI, Cursor, OpenCode, Windsurf and any other agent that reads the Agent Skills format (`SKILL.md`).
 
 ## Quickstart
 
@@ -27,10 +27,10 @@ Prefer a plugin that updates itself? Use one of the routes below instead. Pick o
 
 ```bash
 claude plugin marketplace add theyudhiztira/agent-skills
-claude plugin install pensieve-skills@pensieve
+claude plugin install agent-skills@theyudhiztira
 ```
 
-Update with `claude plugin marketplace update pensieve`, or turn on auto-update for `pensieve` under `/plugin`, Marketplaces.
+Update with `claude plugin marketplace update theyudhiztira`, or turn on auto-update for `theyudhiztira` under `/plugin`, Marketplaces.
 
 </details>
 
@@ -39,7 +39,7 @@ Update with `claude plugin marketplace update pensieve`, or turn on auto-update 
 
 ```bash
 codex plugin marketplace add theyudhiztira/agent-skills
-codex plugin add pensieve-skills@pensieve
+codex plugin add agent-skills@theyudhiztira
 ```
 
 Updates itself at startup.
@@ -51,7 +51,7 @@ Updates itself at startup.
 
 ```bash
 copilot plugin marketplace add theyudhiztira/agent-skills
-copilot plugin install pensieve-skills@pensieve
+copilot plugin install agent-skills@theyudhiztira
 ```
 
 Then, once, add to `~/.copilot/settings.json`:
@@ -59,7 +59,7 @@ Then, once, add to `~/.copilot/settings.json`:
 ```json
 {
   "extraKnownMarketplaces": {
-    "pensieve": { "source": { "source": "github", "repo": "theyudhiztira/agent-skills" }, "autoUpdate": true }
+    "theyudhiztira": { "source": { "source": "github", "repo": "theyudhiztira/agent-skills" }, "autoUpdate": true }
   }
 }
 ```
@@ -93,7 +93,7 @@ This symlinks every skill into `~/.claude/skills` and `~/.agents/skills`, so `gi
 
 ### 2. Install the Python dependency
 
-`pensieve-presentation` builds PowerPoint files with a Python script:
+`presentation` builds PowerPoint files with a Python script:
 
 ```bash
 pip install python-pptx pillow
@@ -122,11 +122,11 @@ This section is for you if you are an AI agent and the user asked you to install
    ```
 
    If `npx` is missing and `bun` is installed, run the same command with `bunx`. To install one skill, add `--skill <name>`.
-4. Install the Python dependency for `pensieve-presentation`: `python3 -m pip install python-pptx pillow`.
+4. Install the Python dependency for `presentation`: `python3 -m pip install python-pptx pillow`.
 5. Check the result with `npx skills@latest list` (add `-g` for a user install). It should list every skill in the catalogue below.
 6. Tell the user to start a new session, because most agents read skills only at session start.
 
-Do not install the skills CLI copy and a plugin for the same agent. If a `pensieve-skills` plugin is already installed, stop and tell the user.
+Do not install the skills CLI copy and a plugin for the same agent. If a `agent-skills` plugin is already installed, stop and tell the user.
 
 ### Use
 
@@ -138,7 +138,7 @@ Do not install the skills CLI copy and a plugin for the same agent. If a `pensie
 
 | Skill | Invocation | Load it when the user asks for | Entry point |
 |---|---|---|---|
-| `pensieve-presentation` | Model-invoked | A deck, slides, a briefing, a pitch, a project update presentation, or to simplify or restyle an existing `.pptx` | [`skills/productivity/pensieve-presentation/SKILL.md`](./skills/productivity/pensieve-presentation/SKILL.md) |
+| `presentation` | Model-invoked | A deck, slides, a briefing, a pitch, a project update presentation, or to simplify or restyle an existing `.pptx` | [`skills/productivity/presentation/SKILL.md`](./skills/productivity/presentation/SKILL.md) |
 
 ## Reference
 
@@ -148,7 +148,7 @@ General workflow tools that are not code-specific.
 
 **Model-invoked** (the agent picks these up when your request fits; you can also name them):
 
-- **[pensieve-presentation](./skills/productivity/pensieve-presentation/SKILL.md)**: build a presentation-ready deck for a specific audience, from a brief or by rebuilding an existing deck, with natural copy, a layout per slide, design tokens and talking points. Outputs PowerPoint, Google Slides or a Claude Slides artifact. [Docs](./docs/productivity/pensieve-presentation.md)
+- **[presentation](./skills/productivity/presentation/SKILL.md)**: build a presentation-ready deck for a specific audience, from a brief or by rebuilding an existing deck, with natural copy, a layout per slide, design tokens and talking points. Outputs PowerPoint, Google Slides or a Claude Slides artifact. [Docs](./docs/productivity/presentation.md)
 
 ## Contributing
 

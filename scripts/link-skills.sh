@@ -40,5 +40,5 @@ done
 
 if ! python3 -c "import pptx" 2>/dev/null; then
   echo
-  echo "pensieve-presentation needs python-pptx:  pip install python-pptx pillow"
+  echo "presentation needs python-pptx:  pip install python-pptx pillow"
 fi

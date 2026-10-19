@@ -5,7 +5,7 @@ One install story, one wording. The Quickstart in `README.md` must say **this** 
 ## Two kinds of install
 
 - **skills CLI** (`npx skills` or `bunx skills`, from [skills.sh](https://skills.sh)): works for every agent. It copies (or symlinks) editable skill files into the agent's skills folder. Updates are manual.
-- **Plugin**: Claude Code, Codex and Copilot install from this repo's own marketplace (`.claude-plugin/marketplace.json`, named `pensieve`, plugin `pensieve-skills`). Plugins reinstall only when `version` in `.claude-plugin/plugin.json` changes, so bump `package.json` and run `npm run sync-plugin-version` on every release.
+- **Plugin**: Claude Code, Codex and Copilot install from this repo's own marketplace (`.claude-plugin/marketplace.json`, named `theyudhiztira`, plugin `agent-skills`). Plugins reinstall only when `version` in `.claude-plugin/plugin.json` changes, so bump `package.json` and run `npm run sync-plugin-version` on every release.
 
 The two routes are exclusive. Installing both gives the agent every skill twice, so always tell users to pick one per agent.
 
@@ -49,10 +49,10 @@ Third-party marketplaces do not auto-update by default in Claude Code.
 
 ```bash
 claude plugin marketplace add theyudhiztira/agent-skills
-claude plugin install pensieve-skills@pensieve
+claude plugin install agent-skills@theyudhiztira
 ```
 
-Update with `claude plugin marketplace update pensieve`, or turn on auto-update for `pensieve` under `/plugin`, Marketplaces.
+Update with `claude plugin marketplace update theyudhiztira`, or turn on auto-update for `theyudhiztira` under `/plugin`, Marketplaces.
 
 </canonical-block>
 
@@ -62,7 +62,7 @@ Update with `claude plugin marketplace update pensieve`, or turn on auto-update 
 
 ```bash
 codex plugin marketplace add theyudhiztira/agent-skills
-codex plugin add pensieve-skills@pensieve
+codex plugin add agent-skills@theyudhiztira
 ```
 
 Updates itself at startup.
@@ -77,7 +77,7 @@ Use the marketplace, not a direct repo install: direct installs cannot auto-upda
 
 ```bash
 copilot plugin marketplace add theyudhiztira/agent-skills
-copilot plugin install pensieve-skills@pensieve
+copilot plugin install agent-skills@theyudhiztira
 ```
 
 Then, once, add to `~/.copilot/settings.json`:
@@ -85,7 +85,7 @@ Then, once, add to `~/.copilot/settings.json`:
 ```json
 {
   "extraKnownMarketplaces": {
-    "pensieve": { "source": { "source": "github", "repo": "theyudhiztira/agent-skills" }, "autoUpdate": true }
+    "theyudhiztira": { "source": { "source": "github", "repo": "theyudhiztira/agent-skills" }, "autoUpdate": true }
   }
 }
 ```

@@ -1,4 +1,4 @@
-# pensieve-presentation
+# presentation
 
 A skill for coding agents that builds presentation-ready slide decks: from a brief, or by rebuilding an existing deck for a new audience. It plans the storyline, picks a layout per slide, writes natural copy in the audience's language, applies design tokens, checks the result, and writes talking points.
 

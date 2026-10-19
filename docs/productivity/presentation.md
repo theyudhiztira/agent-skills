@@ -1,4 +1,4 @@
-# pensieve-presentation
+# presentation
 
 ## What it does
 
