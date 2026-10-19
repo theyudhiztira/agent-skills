@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "title": "Sample deck: field reporting proposal",
+    "language": "en",
+    "preset": "neutral-light",
+    "footer": "Sample deck · replace every [__] before use"
+  },
+  "slides": [
+    {
+      "layout": "cover",
+      "title": "One place for field reports",
+      "subtitle": "Proposal for [Client] operations leadership",
+      "meta": "PENSIEVE · [Month Year]",
+      "notes": {
+        "key": "We are proposing one shared dashboard for field reports.",
+        "points": [
+          "Thank them for the time and say what you will ask for at the end.",
+          "Agenda: what happens today, what we propose, how it rolls out."
+        ],
+        "transition": "Start with what the regional teams told us."
+      }
+    },
+    {
+      "layout": "summary",
+      "eyebrow": "Summary",
+      "title": "Field reports arrive in three formats and get merged by hand every week.",
+      "lead": "We propose one shared dashboard so regional managers see the same numbers on the same day.",
+      "metrics": [
+        { "value": "3", "label": "Report formats", "caption": "Spreadsheet, chat message, paper form" },
+        { "value": "[__]", "label": "Hours per week", "caption": "Spent merging reports at head office" },
+        { "value": "5", "label": "Regions", "caption": "In scope for the first phase" }
+      ],
+      "notes": {
+        "key": "The problem is the weekly manual merge, not the people doing it.",
+        "points": [
+          "Point at the three formats: each region picked what worked locally.",
+          "Fill in the hours figure from the client's own estimate before presenting."
+        ],
+        "transition": "Here is what changes."
+      }
+    },
+    {
+      "layout": "divider",
+      "index": "01",
+      "title": "How it works",
+      "lead": "From three report formats to one shared view."
+    },
+    {
+      "layout": "convergence",
+      "eyebrow": "01_ How it works",
+      "title": "Every region keeps its format, head office sees one view",
+      "inputsLabel": "Today",
+      "inputs": [
+        { "label": "Spreadsheet uploads", "sub": "North and East regions" },
+        { "label": "Chat messages", "sub": "South region" },
+        { "label": "Paper forms", "sub": "West and Central regions" }
+      ],
+      "engine": { "label": "Intake\nservice", "verbs": ["parse", "match sites", "check totals"] },
+      "output": {
+        "label": "Shared dashboard",
+        "headline": "One table per site, updated daily",
+        "rows": ["Deliveries and returns", "Open incidents", "Missing reports flagged"]
+      },
+      "takeaway": "Regional teams change nothing on day one. Head office stops merging by hand.",
+      "notes": {
+        "key": "Nobody in the field has to learn a new tool to start.",
+        "points": [
+          "The intake service reads each format as it is today.",
+          "Missing reports show up as a flag instead of a gap someone notices on Friday."
+        ],
+        "transition": "Not every region starts at once."
+      }
+    },
+    {
+      "layout": "phases",
+      "eyebrow": "02_ Rollout",
+      "title": "Rollout in three phases",
+      "phases": [
+        { "label": "Phase 1", "title": "Two pilot regions", "weight": 2, "active": true,
+          "items": ["Connect spreadsheet uploads", "Connect chat intake", "Daily dashboard for head office", "Weekly check-in with regional leads"] },
+        { "label": "Phase 2", "title": "All regions", "items": ["Paper form scanning for West and Central"] },
+        { "label": "Phase 3", "title": "Alerts", "items": ["Notify regional leads when a site misses a report"] }
+      ],
+      "notes": {
+        "key": "Start where the data is already digital.",
+        "points": ["Phase 1 regions were chosen because their reports are already digital."],
+        "transition": "Two decisions let us start."
+      }
+    },
+    {
+      "layout": "decisions",
+      "eyebrow": "02_ Rollout",
+      "title": "What we need from you",
+      "lead": "With these two decisions, the pilot can start on [date].",
+      "items": [
+        { "title": "Pick the pilot regions", "desc": "Our suggestion is North and South, because their reports are already digital." },
+        { "title": "Name one owner per region", "desc": "One person who answers questions about their region's data during the pilot." }
+      ],
+      "notes": {
+        "key": "Two decisions, both small.",
+        "points": ["Ask directly which region they would rather start with."],
+        "transition": ""
+      }
+    },
+    {
+      "layout": "closing",
+      "title": "Thank you",
+      "subtitle": "Questions and next steps",
+      "notes": "Open the floor. Note every question so the follow-up email answers each one."
+    }
+  ]
+}

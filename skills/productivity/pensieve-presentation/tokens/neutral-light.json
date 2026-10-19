@@ -1,0 +1,45 @@
+{
+  "name": "neutral-light",
+  "description": "Default preset. Warm off-white ground, one blue accent, IBM Plex. For client pitches, internal updates, printed handouts and any audience that reads in a lit room.",
+  "mode": "light",
+  "color": {
+    "ground": "#F6F5F1",
+    "surface": "#FFFFFF",
+    "surfaceRaised": "#ECEAE4",
+    "night": "#1B2430",
+    "line": "#DEDBD3",
+    "lineStrong": "#B9B5AB",
+    "ink": "#1C1E22",
+    "inkMuted": "#50545C",
+    "inkSubtle": "#6B6F77",
+    "inkInverse": "#FFFFFF",
+    "accent": "#1E5BC6",
+    "accentText": "#1E5BC6",
+    "onAccent": "#FFFFFF",
+    "status": { "ok": "#1D7A4A", "caution": "#9A5B00", "critical": "#B3261E" },
+    "categorical": { "c1": "#1E5BC6", "c2": "#0F7B6C", "c3": "#B4521D", "c4": "#6B4FA3" }
+  },
+  "type": {
+    "fontSans": "IBM Plex Sans",
+    "fontMono": "IBM Plex Mono",
+    "fallback": "Arial",
+    "googleFonts": "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@300;400&display=swap",
+    "scale": {
+      "display": 128, "section": 104, "index": 80, "statement": 72,
+      "h1": 56, "h2": 44, "h3": 34, "lead": 28, "body": 26, "small": 24, "metric": 112
+    }
+  },
+  "layout": { "canvas": [1920, 1080], "marginX": 96, "marginTop": 120, "marginBottom": 140, "radius": 0 },
+  "decor": {
+    "grid": false,
+    "eyebrowUppercase": false,
+    "labelUppercase": false,
+    "displayUppercase": false,
+    "ghostNumeral": false
+  },
+  "reasons": {
+    "font": "IBM Plex reads as technical and institutional without being the default AI pick; it has a matching mono for numbers.",
+    "accent": "One blue, used only for the slide's key number, the active step or the section index.",
+    "noDecor": "No grid, no tracked capitals, no ghost numerals: nothing on the slide that does not carry information."
+  }
+}

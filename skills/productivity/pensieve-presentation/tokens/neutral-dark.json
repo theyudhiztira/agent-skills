@@ -1,0 +1,44 @@
+{
+  "name": "neutral-dark",
+  "description": "Dark variant of the default preset. For projected briefings in dim rooms and operations audiences. Same structure as neutral-light.",
+  "mode": "dark",
+  "color": {
+    "ground": "#15171A",
+    "surface": "#1D2024",
+    "surfaceRaised": "#25292E",
+    "night": "#0E1420",
+    "line": "#2E3238",
+    "lineStrong": "#4A4F57",
+    "ink": "#F2F2F0",
+    "inkMuted": "#A7ABB2",
+    "inkSubtle": "#8C9098",
+    "inkInverse": "#FFFFFF",
+    "accent": "#3B7BF0",
+    "accentText": "#82A8F5",
+    "onAccent": "#FFFFFF",
+    "status": { "ok": "#3CC27F", "caution": "#F0A93B", "critical": "#F2685F" },
+    "categorical": { "c1": "#82A8F5", "c2": "#45C7B1", "c3": "#F29452", "c4": "#B39BEA" }
+  },
+  "type": {
+    "fontSans": "IBM Plex Sans",
+    "fontMono": "IBM Plex Mono",
+    "fallback": "Arial",
+    "googleFonts": "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@300;400&display=swap",
+    "scale": {
+      "display": 128, "section": 104, "index": 80, "statement": 72,
+      "h1": 56, "h2": 44, "h3": 34, "lead": 28, "body": 26, "small": 24, "metric": 112
+    }
+  },
+  "layout": { "canvas": [1920, 1080], "marginX": 96, "marginTop": 120, "marginBottom": 140, "radius": 0 },
+  "decor": {
+    "grid": false,
+    "eyebrowUppercase": false,
+    "labelUppercase": false,
+    "displayUppercase": false,
+    "ghostNumeral": false
+  },
+  "reasons": {
+    "mode": "Dark only because the room is dark or the audience works in operations centres; otherwise use neutral-light.",
+    "accent": "accent (#3B7BF0) is for fills and 44px+ text; accentText (#82A8F5) for small blue text, which keeps 4.5:1 on the dark ground."
+  }
+}

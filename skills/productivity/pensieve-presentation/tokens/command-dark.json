@@ -1,0 +1,49 @@
+{
+  "name": "command-dark",
+  "description": "Command-centre briefing preset: dark ground, tactical grid, one blue signal, category colours, Geist. Use for defence, government operations and intelligence audiences.",
+  "mode": "dark",
+  "color": {
+    "ground": "#131313",
+    "surface": "#1B1B1B",
+    "surfaceRaised": "#222222",
+    "night": "#0B1628",
+    "line": "#2D2D2D",
+    "lineStrong": "#424242",
+    "ink": "#FFFFFF",
+    "inkMuted": "#A3A3A3",
+    "inkSubtle": "#8A8A8A",
+    "inkInverse": "#FFFFFF",
+    "accent": "#255FFA",
+    "accentText": "#6B93FF",
+    "onAccent": "#FFFFFF",
+    "status": { "ok": "#2FBF71", "caution": "#F2A516", "critical": "#FF5A5F" },
+    "categorical": { "c1": "#6B93FF", "c2": "#3EC7B0", "c3": "#FF8A3D", "c4": "#EACF53" }
+  },
+  "type": {
+    "fontSans": "Geist",
+    "fontMono": "Geist Mono",
+    "fallback": "Arial",
+    "googleFonts": "https://fonts.googleapis.com/css2?family=Geist:wght@200..700&family=Geist+Mono:wght@300;400;500&display=swap",
+    "scale": {
+      "display": 144, "section": 112, "index": 88, "statement": 72,
+      "h1": 56, "h2": 44, "h3": 36, "lead": 28, "body": 26, "small": 24, "metric": 120
+    }
+  },
+  "layout": { "canvas": [1920, 1080], "marginX": 96, "marginTop": 168, "marginBottom": 160, "radius": 0 },
+  "decor": {
+    "grid": true,
+    "gridPitch": 132,
+    "nodeSize": 14,
+    "eyebrowUppercase": true,
+    "labelUppercase": true,
+    "displayUppercase": true,
+    "ghostNumeral": true
+  },
+  "reasons": {
+    "mode": "Dark by design: command-centre briefings are presented in dim operations rooms.",
+    "grid": "The tactical grid is the identity motif of this preset, and content aligns to its lines.",
+    "uppercase": "Wide-tracked uppercase eyebrows and labels match the formal operations-room style.",
+    "font": "Geist is a free Google Font with a matching mono cut for codes and figures.",
+    "categoryColours": "c1 to c4 mark categories such as operational domains and always travel with their label."
+  }
+}

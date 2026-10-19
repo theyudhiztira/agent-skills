@@ -1,0 +1,21 @@
+{
+  "name": "pensieve-skills",
+  "version": "1.0.0",
+  "description": "PENSIEVE team skills for coding agents: presentation-ready decks with a storyline, natural copy, a layout per slide, design tokens and talking points.",
+  "author": {
+    "name": "theyudhiztira",
+    "url": "https://github.com/theyudhiztira"
+  },
+  "homepage": "https://github.com/theyudhiztira/agent-skills",
+  "repository": "https://github.com/theyudhiztira/agent-skills",
+  "keywords": [
+    "skills",
+    "productivity",
+    "presentation",
+    "slides",
+    "pptx"
+  ],
+  "skills": [
+    "./skills/productivity/pensieve-presentation"
+  ]
+}
